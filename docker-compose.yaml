@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  postgres_db:
+    container_name: postgres_db
+    image: postgres:14.2-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: restapi_ts
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
